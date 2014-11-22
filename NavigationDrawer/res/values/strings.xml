@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">Music Player</string>
+
+    <string-array name="tv_drawer_items">
+        <item>All Music</item>
+        <item>Artist List</item>
+        <item>Album List</item>
+        <item>Folder List</item>
+        <item>Play All</item>
+        <item>Suffle All</item>
+    </string-array>
+    
+    <string-array name="ic_drawer_items">
+        <item>@drawable/all_music</item>
+        <item>@drawable/singer_list_64</item>
+        <item>@drawable/album_list_64</item>
+        <item>@drawable/music_folder_list</item>
+        <item>@drawable/music_album</item>
+        <item>@drawable/suffle_all</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+</resources>

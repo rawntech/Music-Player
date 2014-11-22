@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="1dip" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:padding="2dip"
+        android:src="@drawable/all_music" />
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="5dip">
+        
+        
+    <LinearLayout
+        android:id="@+id/llUpper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="5dip"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tvAlbumName"
+            style="@drawable/textview_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Name"
+            android:textSize="17dip"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            style="@drawable/textview_border"
+            android:textSize="14dip"
+            android:text="Artist name"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/tvSongCount"
+            style="@drawable/textview_border"
+            android:layout_toRightOf="@+id/llUpper"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"
+            android:textSize="14dip"
+            android:text="Count"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="26dip" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

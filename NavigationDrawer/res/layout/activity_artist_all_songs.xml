@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+    
+    <TextView 
+        android:id="@+id/tvArtistName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="5dip"
+        android:text="Arigit Sing"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/tvArtistName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dp"
+        android:background="#7A7474"
+        android:dividerHeight="2dip" />
+
+</RelativeLayout>

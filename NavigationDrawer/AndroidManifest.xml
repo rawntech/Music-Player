@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skarim.music_player.app.activities"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        <activity
+            android:name="com.skarim.music_player.app.activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.skarim.music_player.app.activities.PlayerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.skarim.music_player.app.activities.PlayerActivityNew"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.skarim.music_player.app.activities.ArtistSongsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+          <activity
+            android:name="com.skarim.music_player.app.activities.AlbumSongsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <receiver android:name="CallReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.PHONE_STATE" >
+            </action>
+        </intent-filter>
+    </receiver>
+        
+    </application>
+    
+    
+
+</manifest>
